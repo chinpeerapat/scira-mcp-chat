@@ -23,7 +23,7 @@ const CodeBlock = ({ className, children }: { className?: string; children: stri
   };
 
   // Select appropriate theme based on the app's current theme
-  const codeStyle = theme === 'light' || theme === 'sunset' ? oneLight : tomorrow;
+  const codeStyle = theme === 'light' || theme === 'sunset' || theme === 'minimal' ? oneLight : tomorrow;
 
   return (
     <div className="relative group rounded-lg overflow-hidden border border-border mb-3 md:mb-4 w-full max-w-full">
