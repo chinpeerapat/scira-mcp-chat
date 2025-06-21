@@ -38,10 +38,13 @@ export function ThemeToggle({ className, ...props }: React.ComponentProps<typeof
           <CircleDashed className="mr-2 h-4 w-4" />
           <span>Black</span>
         </DropdownMenuItem>
-        {/* sunset theme */}
         <DropdownMenuItem onSelect={() => setTheme("sunset")}>
           <Sun className="mr-2 h-4 w-4" />
           <span>Sunset</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onSelect={() => setTheme("minimal")}> 
+          <Sun className="mr-2 h-4 w-4" />
+          <span>Minimal</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

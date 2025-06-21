@@ -22,6 +22,7 @@
 - Reasoning model support.
 - [shadcn/ui](https://ui.shadcn.com/) components for a modern, responsive UI powered by [Tailwind CSS](https://tailwindcss.com).
 - Built with the latest [Next.js](https://nextjs.org) App Router.
+- Optional minimal theme for a clean and elegant interface.
 
 ## MCP Server Configuration
 
