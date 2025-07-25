@@ -5,6 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 @custom-variant sunset (&:is(.sunset *));
 @custom-variant black (&:is(.black *));
+@custom-variant uber (&:is(.uber *));
 
 :root {
   --background: oklch(0.99 0.01 56.32);
@@ -183,6 +184,53 @@
   --font-sans: Montserrat, sans-serif;
   --font-serif: Merriweather, serif;
   --font-mono: Ubuntu Mono, monospace;
+  --radius: 0.625rem;
+  --shadow-2xs: 0px 6px 12px -3px hsl(0 0% 0% / 0.04);
+  --shadow-xs: 0px 6px 12px -3px hsl(0 0% 0% / 0.04);
+  --shadow-sm: 0px 6px 12px -3px hsl(0 0% 0% / 0.09), 0px 1px 2px -4px hsl(0 0% 0% / 0.09);
+  --shadow: 0px 6px 12px -3px hsl(0 0% 0% / 0.09), 0px 1px 2px -4px hsl(0 0% 0% / 0.09);
+  --shadow-md: 0px 6px 12px -3px hsl(0 0% 0% / 0.09), 0px 2px 4px -4px hsl(0 0% 0% / 0.09);
+  --shadow-lg: 0px 6px 12px -3px hsl(0 0% 0% / 0.09), 0px 4px 6px -4px hsl(0 0% 0% / 0.09);
+  --shadow-xl: 0px 6px 12px -3px hsl(0 0% 0% / 0.09), 0px 8px 10px -4px hsl(0 0% 0% / 0.09);
+  --shadow-2xl: 0px 6px 12px -3px hsl(0 0% 0% / 0.22);
+}
+
+.uber {
+  --background: hsl(0 0% 0%);
+  --foreground: hsl(0 0% 100%);
+  --card: hsl(0 0% 8%);
+  --card-foreground: hsl(0 0% 100%);
+  --popover: hsl(0 0% 8%);
+  --popover-foreground: hsl(0 0% 100%);
+  --primary: hsl(0 0% 0%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(0 0% 20%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(0 0% 20%);
+  --muted-foreground: hsl(0 0% 70%);
+  --accent: hsl(188 69% 44%);
+  --accent-foreground: hsl(0 0% 0%);
+  --destructive: hsl(0 80% 50%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(0 0% 20%);
+  --input: hsl(0 0% 20%);
+  --ring: hsl(188 69% 44%);
+  --chart-1: hsl(188 69% 44%);
+  --chart-2: hsl(0 0% 100%);
+  --chart-3: hsl(0 0% 70%);
+  --chart-4: hsl(188 69% 30%);
+  --chart-5: hsl(0 0% 50%);
+  --sidebar: hsl(0 0% 0%);
+  --sidebar-foreground: hsl(0 0% 100%);
+  --sidebar-primary: hsl(0 0% 0%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(188 69% 44%);
+  --sidebar-accent-foreground: hsl(0 0% 0%);
+  --sidebar-border: hsl(0 0% 20%);
+  --sidebar-ring: hsl(188 69% 44%);
+  --font-sans: "UberMove", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: Merriweather, serif;
+  --font-mono: "Courier New", monospace;
   --radius: 0.625rem;
   --shadow-2xs: 0px 6px 12px -3px hsl(0 0% 0% / 0.04);
   --shadow-xs: 0px 6px 12px -3px hsl(0 0% 0% / 0.04);
