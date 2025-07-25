@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { ChatSidebar } from "@/components/chat-sidebar";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Menu } from "lucide-react";
 import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { BotIdClient } from "botid/client";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mcpchat.scira.ai"),
@@ -49,11 +46,11 @@ export default function RootLayout({
             {
               path: "/api/chat",
               method: "POST",
-            }
+            },
           ]}
         />
       </head>
-      <body className={`${inter.className}`}>
+      <body className="font-sans">
         <Providers>
           <div className="flex h-dvh w-full">
             <ChatSidebar />
