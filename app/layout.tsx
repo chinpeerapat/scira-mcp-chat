@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { ChatSidebar } from "@/components/chat-sidebar";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Menu } from "lucide-react";
@@ -9,7 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import { BotIdClient } from "botid/client";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mcpchat.scira.ai"),
@@ -53,7 +53,7 @@ export default function RootLayout({
           ]}
         />
       </head>
-      <body className={`${inter.className}`}>
+      <body className={`${poppins.className}`}>
         <Providers>
           <div className="flex h-dvh w-full">
             <ChatSidebar />
